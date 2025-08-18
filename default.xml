@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="remote1" fetch="https://git.yoctoproject.org"/>
-  <remote name="remote2" fetch="https://github.com"/>
-  <project name="meta-arm" path="meta-arm" revision="8e0f8af90fefb03f08cd2228cde7a89902a6b37c" remote="remote1"/>
-  <!--<project name="meta-beagleboard" path="meta-beagleboard" revision="813d8a26664d6969789af7de302096012fce44b9" remote="remote2"/>-->
-  <project name="openembedded/meta-openembedded" path="meta-openembedded" revision="e8fd97d86af86cdcc5a6eb3f301cbaf6a2084943" remote="remote2"/>
-  <project name="strange-corner/meta-reto" path="meta-reto" revision="scarthgap" remote="remote2"/>
-  <project name="sbabic/meta-swupdate" path="meta-swupdate" revision="43ef322cbf5b91d84b007c343cf73e9b01699594" remote="remote2"/>
-  <project name="meta-ti" path="meta-ti" revision="6bb039c8dec3e21dc143e171ac2b0da2c2059561" remote="remote1"/>
-  <project name="poky" path="poky" revision="792d18b4cb2451b00280641403e6eaf37bd6e53f" remote="remote1"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  <remote name="github" fetch="https://github.com"/>
+  <project name="meta-arm" path="meta-arm" revision="8e0f8af90fefb03f08cd2228cde7a89902a6b37c" remote="yocto"/>
+  <project name="openembedded/meta-openembedded" path="meta-openembedded" revision="e8fd97d86af86cdcc5a6eb3f301cbaf6a2084943" remote="github"/>
+  <project name="strange-corner/meta-reto" path="meta-reto" revision="scarthgap" remote="github"/>
+  <project name="sbabic/meta-swupdate" path="meta-swupdate" revision="43ef322cbf5b91d84b007c343cf73e9b01699594" remote="github"/>
+  <project name="meta-ti" path="meta-ti" revision="6bb039c8dec3e21dc143e171ac2b0da2c2059561" remote="yocto"/>
+  <project name="poky" path="poky" revision="792d18b4cb2451b00280641403e6eaf37bd6e53f" remote="yocto"/>
 </manifest>
